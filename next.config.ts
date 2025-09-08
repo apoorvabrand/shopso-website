@@ -5,6 +5,15 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   
+  // Ensure proper module resolution for build environments
+  webpack: (config: any) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': require('path').resolve(__dirname, 'src'),
+    }
+    return config
+  },
+  
   // Enhanced image optimization for better SEO and performance
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
