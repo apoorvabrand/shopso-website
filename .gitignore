@@ -1,0 +1,287 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# =============================================================================
+# DEPENDENCIES
+# =============================================================================
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Package manager lock files (keep only one)
+# Uncomment the ones you want to ignore
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# =============================================================================
+# NEXT.JS BUILD OUTPUT
+# =============================================================================
+/.next/
+/out/
+/build
+/.swc/
+
+# =============================================================================
+# TESTING
+# =============================================================================
+/coverage
+/test-results/
+/playwright-report/
+/playwright/.cache/
+*.lcov
+
+# =============================================================================
+# ENVIRONMENT & CONFIGURATION
+# =============================================================================
+# Environment files (NEVER commit these)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Configuration files with sensitive data
+config.local.js
+config.local.json
+
+# =============================================================================
+# DEVELOPMENT & DEBUGGING
+# =============================================================================
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# EDITORS & IDEs
+# =============================================================================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# SECURITY & CERTIFICATES
+# =============================================================================
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pub
+
+# GPG keys
+*.gpg
+*.asc
+
+# =============================================================================
+# DEPLOYMENT & HOSTING
+# =============================================================================
+# Vercel
+.vercel
+.vercel.json
+
+# Netlify
+.netlify/
+
+# AWS
+.aws/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+
+# =============================================================================
+# DATABASES & STORAGE
+# =============================================================================
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# MongoDB
+*.mongodb
+
+# Redis dump
+dump.rdb
+
+# =============================================================================
+# TYPESCRIPT & BUILD
+# =============================================================================
+*.tsbuildinfo
+next-env.d.ts
+.tsbuildinfo
+
+# =============================================================================
+# ANALYTICS & MONITORING
+# =============================================================================
+# Bundle analyzer
+.bundle-analyzer/
+bundle-analyzer-report.html
+
+# Lighthouse reports
+lighthouse-report.html
+lighthouse-report.json
+
+# =============================================================================
+# TEMPORARY & CACHE FILES
+# =============================================================================
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Turbo
+.turbo/
+
+# =============================================================================
+# LOGS & REPORTS
+# =============================================================================
+# Application logs
+logs/
+*.log
+
+# Error reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# =============================================================================
+# MISC FILES
+# =============================================================================
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Generated files
+generated/
+dist/
+lib/
+
+# Storybook
+storybook-static/
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+# Add any project-specific ignores here
+# e.g., generated documentation, specific build artifacts, etc.
+
+# Generated API documentation
+api-docs/
+
+# Generated screenshots for testing
+screenshots/
+test-screenshots/
+
+# Local development files
+local/
+dev-data/
