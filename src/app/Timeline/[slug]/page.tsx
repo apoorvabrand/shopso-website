@@ -5,7 +5,7 @@ import { sluggedContent } from "@/data/timelinedata";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AlertTriangle, BarChart3, Cpu, Database, Gauge, Layers3, Settings2, Zap } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { JSX } from "react";
 
 const iconMap: Record<string, JSX.Element> = {
